@@ -15,6 +15,10 @@ body{
     background-color: #c7cdd3;
 }
 
+#memory {
+    display: none;
+}
+
 .card{
     width: 100px;
     height: 100px;
@@ -86,7 +90,39 @@ body{
 }
 
 @media (max-width:415px){
+    body{ 
+        background-image: url(../images/pokemomCapa.png);
+        background-position: bottom center ;
+        background-size: cover;
+    }
+
     #gameBoard{
-        max-width: 415px;
+        width: 390px;
+    }
+
+    .card{
+        width: 80px;
+        height: 80px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform .5s;
+    }
+    
+    .card_back, .card_front{
+        width:100%;
+        height: 100%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.45);
+        backface-visibility: hidden;
+    }
+
+    #memory {
+        display: block;
+        position: absolute;
+        margin-top: -640px;
     }
 }
