@@ -84,3 +84,9 @@ body{
     grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
     gap:20px
 }
+
+@media (max-width:415px){
+    #gameBoard{
+        max-width: 415px;
+    }
+}
