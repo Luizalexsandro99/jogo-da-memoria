@@ -125,4 +125,10 @@ body{
         position: absolute;
         margin-top: -640px;
     }
+
+    #progAlex {
+        display: block;
+        position: absolute;
+        margin-top: -570px;
+    }
 }
